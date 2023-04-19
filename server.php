@@ -29,7 +29,7 @@ session_start();
             ?>
         </div>
         <div>
-        <button type="button" class="btn btn-primary"><a href="/php-strong-password-generator/index.php" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Torna alla Homepage</a></button>
+        <button type="button" class="btn btn-primary" href=''><a href="/php-strong-password-generator/index.php" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Torna alla Homepage</a></button>
 
         </div>
     </div>

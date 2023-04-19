@@ -26,7 +26,7 @@
                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
                 </div>
                 
-                <button type="submit" class="btn btn-primary"><a href="/php-strong-password-generator/server.php" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Invia</a></button>
+                <button type="submit" class="btn btn-primary">Invia</button>
                 <button type="reset" class="btn btn-secondary">Annulla</button>
 
             </form>
@@ -36,7 +36,8 @@
         session_start();
         
         if(isset($_GET['email'])){
-            
+
+            header('Location:'.'/php-strong-password-generator/server.php');
             $_SESSION['password'] = passwordGenerator($_GET['email']);
         
         }
