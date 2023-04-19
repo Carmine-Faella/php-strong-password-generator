@@ -40,6 +40,13 @@
             header('Location:'.'/php-strong-password-generator/server.php');
             $_SESSION['password'] = passwordGenerator($_GET['email']);
         
+        }else{
+            ?>
+            <div class="alert alert-info" role="alert">
+                Nessun valore inserito
+            </div>
+            
+            <?php
         }
             
             
