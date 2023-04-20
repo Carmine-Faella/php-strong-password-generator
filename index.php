@@ -25,6 +25,40 @@
                     <label for="exampleInputEmail1" class="form-label">Lunghezza Password</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
                 </div>
+                <div class="py-3">Consenti ripetizione</div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Si
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        No
+                    </label>
+                </div>
+                <div class="py-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="0" id="flexCheckDefault" name="Letter">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Lettere
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="1" id="flexCheckChecked" name="Number">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Numeri
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="2" id="flexCheckChecked" name="Simbol">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Simboli
+                        </label>
+                    </div>
+                </div>
+                
                 
                 <button type="submit" class="btn btn-primary">Invia</button>
                 <button type="reset" class="btn btn-secondary">Annulla</button>
@@ -39,16 +73,8 @@
 
             header('Location:'.'/php-strong-password-generator/server.php');
             $_SESSION['password'] = passwordGenerator($_GET['email']);
-        
-        }else{
-            ?>
-            <div class="alert alert-info" role="alert">
-                Nessun valore inserito
-            </div>
-            
-            <?php
-        }
-            
+
+        }    
             
         ?>
     </div>
